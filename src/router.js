@@ -20,7 +20,7 @@ const routes = [
         path: '/',
         name: 'home',
         component: () => import('./views/Home.vue'),
-        beforeEnter: requiredAuth
+        beforeEnter: requiredAuth //ruta protegida
     },
     {
         path: '/login',
