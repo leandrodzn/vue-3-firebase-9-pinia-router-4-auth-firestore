@@ -29,6 +29,7 @@ const handlerSubmit = async () => {
       placeholder="Ingrese contraseña"
       v-model.trim="password"
     />
+    <!-- disabled para que no se presione muchas veces el botón -->
     <button type="submit" :disabled="userStore.loadingUser">Registrarse</button>
   </form>
 </template>
